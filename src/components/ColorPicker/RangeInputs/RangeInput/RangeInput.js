@@ -6,7 +6,12 @@ const RangeInput = props => {
     Object.keys(props.colors).map(colorKey => (
       <div key={colorKey}>
         <span>{colorKey}</span>
-        <input type="range" min='0' max='255' onChange={evt => props.updatedColor(colorKey, evt.target.value)} />
+        <input
+          type="range"
+          min='0'
+          max='255'
+          value={props.colors[colorKey]}
+          onChange={evt => props.updatedColor(colorKey, evt.target.value)} />
         <span>{props.colors[colorKey]}</span>
       </div>
     ))

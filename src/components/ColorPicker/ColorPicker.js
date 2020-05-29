@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import RangeInputs from './RangeInputs/RangeInputs'
 
-const ColorPicker = props => {
+const ColorPicker = _ => {
   const [colors, setColors] = useState({
     red: 0,
     green: 0,
