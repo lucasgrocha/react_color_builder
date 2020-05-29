@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, Fragment } from 'react'
 import RangeInputs from './RangeInputs/RangeInputs'
+import BoxColor from './BoxColor/BoxColor'
 
 const ColorPicker = _ => {
   const [colors, setColors] = useState({
@@ -16,7 +17,10 @@ const ColorPicker = _ => {
   }
 
   return (
-    <RangeInputs updateColor={handleUpdatedColor} colors={colors} />
+    <Fragment>
+      <RangeInputs updateColor={handleUpdatedColor} colors={colors} />
+      <BoxColor colors={colors} />
+    </Fragment>
   )
 }
 
