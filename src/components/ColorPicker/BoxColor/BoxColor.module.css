@@ -1,7 +1,14 @@
 .BoxColor {
-  height: 80px;
-  width: 160px;
+  height: 90px;
+  width: 180px;
   border: 1px solid black;
   color: white;
   cursor: pointer;
+}
+
+@media (min-width: 1030px) {
+  .BoxColor {
+    height: 180px;
+    width: 360px;
+  }
 }

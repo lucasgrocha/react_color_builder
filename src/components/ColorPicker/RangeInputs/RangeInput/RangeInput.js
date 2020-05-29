@@ -5,6 +5,9 @@ import styled from 'styled-components'
 const StyledSpan = styled.span`
   display: inline-block;
   width: ${props => props.width};
+  @media (min-width: 1030px) {
+    width: 120px
+  }
 `
 
 const RangeInput = props => {
