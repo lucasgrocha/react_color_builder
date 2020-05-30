@@ -17,8 +17,8 @@ const boxColor = props => {
 
   return (
     <div style={{backgroundColor: rgb}} className={classes.BoxColor}>
-      <StyledCopyToClipBoard text={rgb} onCopy={() => alert('Copied to clipboard')}>
-          <span>{rgb}</span>
+      <StyledCopyToClipBoard text={rgb} onCopy={() => props.copied()}>
+        <span>{rgb}</span>
       </StyledCopyToClipBoard>
     </div>
   )
